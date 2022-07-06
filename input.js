@@ -30,7 +30,11 @@ const handleUserInput = (data) => {
   } else if (data === '\u0064') {
     // console.log("D");
     connection.write('Move: right');
+  } else if (data === '\u003D') {
+    // console.log("D");
+    connection.write('Say: Over9000');
   }
+
 };
 module.exports = {
   setupInput,

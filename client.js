@@ -12,7 +12,7 @@ const connect = () => {
 
   conn.on("connect", () => {
     console.log("Congrats, you have connected successfully!")
-    conn.write("Name: LOL");
+    conn.write("Name: MOE");
 
   });
 
