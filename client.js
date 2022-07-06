@@ -16,14 +16,6 @@ const connect = () => {
 
   });
 
-  // conn.on("connect", () => {
-  //   setInterval(() => {
-  //     conn.write("Move: left");
-  //     conn.write("Move: up");
-  //   }, 200);
-
-  // });
-
   conn.on("data", (data) => {
     console.log("Game says:", data);
   });
