@@ -12,12 +12,26 @@ const connect = () => {
 
   conn.on("connect", () => {
     console.log("Congrats, you have connected successfully!")
-    conn.write("Name: MOE");
+    conn.write("Name: LOL");
+
   });
+
+  // conn.on("connect", () => {
+  //   setInterval(() => {
+  //     conn.write("Move: left");
+  //     conn.write("Move: up");
+  //   }, 200);
+
+  // });
 
   conn.on("data", (data) => {
     console.log("Game says:", data);
   });
+
+  // conn.on("data", (data) => {
+  //   conn.write(`${}`);
+
+  // });
 
   return conn;
 };
