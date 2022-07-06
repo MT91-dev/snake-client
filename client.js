@@ -28,11 +28,6 @@ const connect = () => {
     console.log("Game says:", data);
   });
 
-  // conn.on("data", (data) => {
-  //   conn.write(`${}`);
-
-  // });
-
   return conn;
 };
 
